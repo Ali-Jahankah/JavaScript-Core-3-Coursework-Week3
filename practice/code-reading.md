@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+-=-=- Because one of the is in global scope and otherone is in function scope.
 
 ## Question 2
 
@@ -34,6 +35,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+-=-=-=-=- Y will be undefined and loging f1() gives 10. We have access to global scope from the function scope.
 
 ## Question 3
 
@@ -62,3 +64,4 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+-=-=-=-=- Output will be 10 because we are getting a value from global and changing that in function scope and returng that again.

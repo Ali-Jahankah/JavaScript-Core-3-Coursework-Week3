@@ -1,5 +1,4 @@
-let hogwarts = [
-  {
+let hogwarts = [{
     firstName: "Harry",
     lastName: "Potter",
     house: "Gryffindor",
@@ -70,3 +69,32 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+const nameHandler = (arr) => {
+  arr.forEach(item => {
+    const {
+      house,
+      firstName,
+      lastName
+    } = item;
+    if (house === "Gryffindor") {
+      console.log(`${firstName} ${lastName}`);
+    }
+
+  })
+}
+nameHandler(hogwarts);
+console.log("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+const teacherHandler = (arr) => {
+  arr.forEach(item => {
+    const {
+      pet,
+      occupation,
+      firstName,
+      lastName
+    } = item;
+    if (pet && occupation === "Teacher") {
+      console.log(firstName + " " + lastName);
+    }
+  })
+}
+teacherHandler(hogwarts);
